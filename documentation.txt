@@ -1,0 +1,68 @@
+		LANGUAGE,FRAMEWORKS,DATA BASE SYSTEM,
+
+
+
+		DEVELOPERS
+
+		Jackson Muta CT206/101226/19
+		Eric kiPRUTO CT206/101236/19
+		Bylon Araka CT206/101251/19
+		Kennedy Ndung'u CT206/101220/19
+		Sydney Kipchirchir CT206/101240/19
+		Kenneth Kiprotich CT206/100341/19
+		Rachael Nyokabi CT206/101227/19
+
+	 PROGRAMMING LANGUAGE USED
+python 3.7
+
+	MARK UP AND CANVAS  LANGUAGE 
+HTML 
+CSS
+BOOTSTRAP
+
+	DATABASE TECHNOLOGY
+mongodb Document Type Database.Used for cloud Computing
+
+	PYTHON MODULES USED
+flask  Web framework
+
+time Time Utility
+
+passlib Cryptography and Hashing
+
+
+
+
+
+
+
+The application is written in python  language. Python  version 3.7 is used.
+
+Flask web framework is used to manage routes and also rendering of the pages
+
+
+Pymongo is used to connect the application to the Mongo Database hosted on the local
+machine.
+
+The application controls access and editing of data on patients medication and medical 
+inforamation.
+
+User credentials are encrypted in hashing methods like Argon2,sha 256 and salted md_5
+.
+
+	DATA ACCESS
+ 
+Data access is managed by roles in the hospital and also previlages based in roles,
+
+The doctor is allowed to modify and modify patient data.
+
+The patient can access their information but not modify it.
+
+The chemist can access the drugs prescribed on one time but not the drug history.
+
+			SECURITY
+Passwords are encrypted in Argon2 sha-256 and salted md-5 which prevent account
+by-pass.
+
+Log in are not mentained and sessions are deleted in every 5 seconds....new tab 
+opening closes the session and a log in is always needed to modify data.

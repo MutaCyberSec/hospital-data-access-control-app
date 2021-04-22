@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>MY DASHBOARD </title>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="{{ url_for('static', filename='css/main2.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+<div align="center">
+    <p id="header">
+        
+                <form method=POST action="{{ url_for('patient') }}">
+
+
+                    <h2 id = naaa>
+                        MY INFORMATION
+                    </h2>
+                    <p>
+                    On this page,you can see your fomer history and information stored in the hospitals database.
+                    
+                    <br>
+                    The information is secure and stored in form of ciphers which only a person logged in to your
+                    account can see.
+                    <br>
+                    You are advised to close this page after you are done with it.
+                    Keep your hospital passwords secret and private
+                    </p>
+
+                    <input type="text" name="patname" placeholder="Registered  Name ">
+                    <br><br>
+
+                    <button type="submit" class="btn btn-primary btn-block">SEARCH</button>
+                    
+                </form>
+            
+                <div align="center">
+                
+                
+                    <br>
+
+                    {{h1}}   {{ name }}
+  
+                    <br>
+                    <br>
+
+                   
+                    <br>
+
+                    {{h3}}
+                    <br>
+                    <br>
+                    <hr width="50%">
+                    {{h4}} {{ ti }}
+                    <br>
+                    {% for des in infects%}
+                    <li>
+                        {{ des }}
+                        <br>
+                    </li>
+                    {% endfor %}
+                   
+
+                    <br>
+                    <br>
+                    {{h2}}
+                    <br>
+                    <br>
+                      {% for drug in d%}
+                      <li>
+                          {{ drug }}
+                          <br>
+                      </li>
+                      {% endfor %}
+                     <hr width="50%">
+  
+  
+  
+  
+  </div>
+
+                
+
+
+
+
+<br><br>
+<br><br>
+    </p> </div>
+
+</body>
+
+</html>

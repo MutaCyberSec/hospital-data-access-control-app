@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>MY DASHBOARD </title>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="{{ url_for('static', filename='css/main2.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+<div align="center">
+    <p id="header">
+        <h2>
+                <form method=POST action="{{ url_for('chemist') }}">
+
+
+                    <h2 id = naaa>
+                        SEARCH A PATIENT
+                    </h2>
+
+                    <input type="text" name="patname" placeholder="Patient Name ">
+                    <br><br>
+
+                    <button type="submit" class="btn btn-primary btn-block">SEARCH</button>
+                </h2>
+                </form>
+<div align="center">
+                
+                {{h1}} {{ name }}
+
+                  <br>
+                  <br>
+                  
+                  <br>
+                  <br>
+                  {{h2}} 
+                    {% for drug in d%}
+                    <li>
+                        {{ drug }}
+                    </li>
+                    {% endfor %}
+                   </ol>
+
+
+
+
+</div>
+<br><br>
+<br><br>
+    </p> </div>
+
+</body>
+
+</html>
