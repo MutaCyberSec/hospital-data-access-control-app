@@ -2,15 +2,10 @@
 
 
 
-		DEVELOPERS
+		
 
-		Jackson Muta CT206/101226/19
-		Eric kiPRUTO CT206/101236/19
-		Bylon Araka CT206/101251/19
-		Kennedy Ndung'u CT206/101220/19
-		Sydney Kipchirchir CT206/101240/19
-		Kenneth Kiprotich CT206/100341/19
-		Rachael Nyokabi CT206/101227/19
+		
+
 
 	 PROGRAMMING LANGUAGE USED
 python 3.7
